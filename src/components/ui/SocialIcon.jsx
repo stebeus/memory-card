@@ -6,8 +6,8 @@ export function SocialIcon({ brand, alt }) {
       className="social-icon"
       role="img"
       aria-label={alt}
-      width="24"
-      height="24"
+      width={24}
+      height={24}
       fill="currentColor"
     >
       <use href={`${BASE_URL}social-icons.svg#${brand}`}></use>

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { fetchPokemon } from '@/api.js';
 
 export function Card({ id, handler }) {
   const spriteUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
@@ -8,21 +9,7 @@ export function Card({ id, handler }) {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const fetchPokemon = async () => {
-      const pokemonUrl = `https://pokeapi.co/api/v2/pokemon-form/${id}`;
-
-      try {
-        const response = await fetch(pokemonUrl);
-        const data = await response.json();
-        setPokemon(data.name);
-      } catch (error) {
-        setError(error.message);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    fetchPokemon(id);
+    fetchPokemon(id, setPokemon, setError, setIsLoading);
   }, [id]);
 
   if (isLoading) return <p>Loading...</p>;

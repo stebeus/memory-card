@@ -11,15 +11,18 @@ export function App() {
   const [bestScore, setBestScore] = useState(0);
   const [tappedCards, setTappedCards] = useState([]);
 
+  function endGame(score, bestScore) {
+    setBestScore(score > bestScore ? score : bestScore);
+    setScore(0);
+    setTappedCards([]);
+  }
+
   function handleTap({ target }) {
     const card = target.closest('[data-pokemon]');
     const pokemon = card.dataset.pokemon;
 
     if (tappedCards.includes(pokemon)) {
-      setBestScore(score > bestScore ? score : bestScore);
-      setScore(0);
-      setTappedCards([]);
-
+      endGame(score, bestScore);
       return;
     }
 

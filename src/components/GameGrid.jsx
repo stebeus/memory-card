@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Card } from '@/components/ui/Card.jsx';
+import { Card } from './ui/Card.jsx';
 
 const pokemonList = [];
 

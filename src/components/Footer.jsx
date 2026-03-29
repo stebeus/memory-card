@@ -1,5 +1,5 @@
-import { Link } from '@/components/ui/Link.jsx';
-import { SocialIcon } from '@/components/ui/SocialIcon.jsx';
+import { Link } from './ui/Link.jsx';
+import { SocialIcon } from './ui/SocialIcon.jsx';
 
 export function Footer() {
   return (

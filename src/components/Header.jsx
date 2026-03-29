@@ -1,4 +1,4 @@
-import { Link } from '@/components/ui/Link.jsx';
+import { Link } from './ui/Link.jsx';
 
 export function Header() {
   return (

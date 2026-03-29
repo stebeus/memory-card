@@ -23,7 +23,7 @@ export function Card({ id, handler }) {
       onKeyDown={handler}
     >
       <h2>{pokemon}</h2>
-      <img src={spriteUrl} alt={pokemon} width={160} height={160} />
+      <img src={spriteUrl} alt="" width={160} height={160} />
     </article>
   );
 }

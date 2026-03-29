@@ -5,7 +5,7 @@ export function Link({ to = BASE_URL, children }) {
   const isExternal = urlScheme.test(`${to}//:`);
 
   const isTargetBlank = isExternal && {
-    target: ' __blank',
+    target: '_blank',
     rel: 'noopener noreferrer',
   };
 

@@ -1,5 +1,9 @@
 import { useEffect, useState } from 'react';
+
 import { fetchPokemon } from '@/api.js';
+
+import { ErrorMessage } from './ui/ErrorMessage.jsx';
+import { Loader } from './ui/Loader.jsx';
 
 export function Card({ id, handler }) {
   const spriteUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
@@ -12,8 +16,8 @@ export function Card({ id, handler }) {
     fetchPokemon(id, setPokemon, setError, setIsLoading);
   }, [id]);
 
-  if (isLoading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error}</p>;
+  if (isLoading) return <Loader />;
+  if (error) return <ErrorMessage message={error} />;
 
   return (
     <article

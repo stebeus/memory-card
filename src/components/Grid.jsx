@@ -1,6 +1,6 @@
 import { Card } from './Card.jsx';
 
-const getRandomId = (pokemonAmount = 151) =>
+const getRandomId = (pokemonAmount = 75) =>
   Math.ceil(Math.random() * pokemonAmount);
 
 export function Grid({ size = 8, cardHandler }) {

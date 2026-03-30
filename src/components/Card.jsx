@@ -5,8 +5,6 @@ import errorIcon from '@/assets/icons.svg#error';
 import loaderIcon from '@/assets/icons.svg#poke-ball';
 
 export function Card({ id, handler }) {
-  const spriteUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
-
   const [pokemon, setPokemon] = useState();
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -14,6 +12,8 @@ export function Card({ id, handler }) {
   useEffect(() => {
     fetchPokemon(id, setPokemon, setError, setIsLoading);
   }, [id]);
+
+  const spriteUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
 
   const [imgClassName, setImgClassName] = useState('sprite');
   const [imgUrl, setImgUrl] = useState(spriteUrl);

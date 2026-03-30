@@ -26,6 +26,19 @@
   --space-xl: 1.5rem;
   --space-xxl: 2rem;
 
+  /* Typography */
+  --ff: Ari-W9500;
+  --ff-bold: 'Ari-W9500 Bold';
+  --ff-display: 'Ari-W9500 Display';
+  --fs-md: 1rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.75rem;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --font-body: var(--fw-regular) var(--fs-md) var(--ff);
+  --font-heading: var(--fw-bold) var(--fs-md) var(--ff-bold);
+  --font-logo: var(--fw-bold) var(--fs-xl) var(--ff-display);
+
   color-scheme: light dark;
 }
 

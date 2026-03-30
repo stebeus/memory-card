@@ -4,7 +4,7 @@ import { Footer } from './components/Footer/index.jsx';
 import { Grid } from './components/Grid/index.jsx';
 import { Header } from './components/Header/index.jsx';
 
-import './assets/App.css';
+import './assets/styles/App.css';
 
 export function App() {
   const [score, setScore] = useState(0);

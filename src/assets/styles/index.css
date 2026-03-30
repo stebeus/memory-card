@@ -1,0 +1,17 @@
+@font-face {
+  font-family: Ari-W9500;
+  src: url('@/assets/fonts/Ari-W9500.woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ari-W9500 Bold';
+  src: url('@/assets/fonts/Ari-W9500Bold.woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ari-W9500 Display';
+  src: url('@/assets/fonts/Ari-W9500Display.woff2');
+  font-display: swap;
+}

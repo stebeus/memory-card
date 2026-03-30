@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { fetchPokemon } from '@/api.js';
 
-import errorIcon from '@/assets/icons.svg#error';
-import loaderIcon from '@/assets/icons.svg#poke-ball';
+import errorIcon from '@/assets/icons/error.svg';
+import loaderIcon from '@/assets/icons/poke-ball.svg';
 
 export function Card({ id, handler }) {
   const [pokemon, setPokemon] = useState();
@@ -15,14 +15,14 @@ export function Card({ id, handler }) {
 
   const spriteUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
 
-  const [imgClassName, setImgClassName] = useState('sprite');
-  const [imgUrl, setImgUrl] = useState(spriteUrl);
-  const [title, setTitle] = useState(pokemon);
+  let imgClassName = 'sprite';
+  let imgUrl = spriteUrl;
+  let title = pokemon;
 
-  function setContent(imgClassName, imgUrl, title) {
-    setImgClassName(imgClassName);
-    setImgUrl(imgUrl);
-    setTitle(title);
+  function setContent(newImgClassName, newImgUrl, newTitle) {
+    imgClassName = newImgClassName;
+    imgUrl = newImgUrl;
+    title = newTitle;
   }
 
   if (isLoading) setContent('loader', loaderIcon, 'Loading...');

@@ -49,3 +49,7 @@
   min-height: 100dvh;
   font: var(--font-body);
 }
+
+h2 {
+  font: var(--font-heading);
+}

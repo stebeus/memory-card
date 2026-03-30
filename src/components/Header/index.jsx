@@ -1,5 +1,5 @@
-import { Link } from '@/components/ui/Link/index.jsx';
-import { Scoreboard } from '@/components/ui/Scoreboard/index.jsx';
+import { Link } from '@/components/__ui__/Link/index.jsx';
+import { Scoreboard } from '@/components/__ui__/Scoreboard/index.jsx';
 
 export function Header({ score, bestScore }) {
   return (

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
-import { Footer } from './components/Footer.jsx';
-import { Grid } from './components/Grid.jsx';
-import { Header } from './components/Header.jsx';
+import { Footer } from './components/Footer/index.jsx';
+import { Grid } from './components/Grid/index.jsx';
+import { Header } from './components/Header/index.jsx';
 
 import './assets/App.css';
 

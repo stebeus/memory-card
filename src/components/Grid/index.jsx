@@ -1,4 +1,4 @@
-import { Card } from './Card.jsx';
+import { Card } from '@/components/Card/index.jsx';
 
 const getRandomId = (pokemonAmount = 75) =>
   Math.ceil(Math.random() * pokemonAmount);

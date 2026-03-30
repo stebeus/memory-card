@@ -1,5 +1,5 @@
+import { Icon } from './ui/Icon.jsx';
 import { Link } from './ui/Link.jsx';
-import { SocialIcon } from './ui/SocialIcon.jsx';
 
 export function Footer() {
   return (
@@ -9,7 +9,7 @@ export function Footer() {
         <Link to="https://opensource.org/license/mit">MIT License</Link>
       </p>
       <Link to="https://github.com/stebeus">
-        <SocialIcon brand="github" alt="GitHub profile" />
+        <Icon fileName="github" alt="GitHub profile" />
       </Link>
     </footer>
   );

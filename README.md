@@ -1,4 +1,4 @@
-# Memory card game
+# Memory Card Game
 
 A Pokémon-themed game where players score by tapping unique cards. Players lose points if they tap the same Pokémon card.
 

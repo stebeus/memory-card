@@ -7,7 +7,7 @@ export function Header({ score, bestScore }) {
   return (
     <header>
       <h1 className="logo">
-        <Link>Memory card</Link>
+        <Link>Memory Card Game</Link>
       </h1>
       <Scoreboard score={score} bestScore={bestScore} />
     </header>

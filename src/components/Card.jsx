@@ -8,7 +8,7 @@ import { Loader } from './ui/Loader.jsx';
 export function Card({ id, handler }) {
   const spriteUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
 
-  const [pokemon, setPokemon] = useState([]);
+  const [pokemon, setPokemon] = useState();
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 

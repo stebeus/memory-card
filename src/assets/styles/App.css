@@ -1,7 +1,3 @@
-img {
-  image-rendering: pixelated;
-}
-
 @scope (main) {
   :scope {
     padding: var(--space-xs);

@@ -11,7 +11,7 @@ export function Footer() {
         <Link to="https://opensource.org/license/mit">MIT License</Link>
       </p>
       <Link to="https://github.com/stebeus">
-        <Icon fileName="github" alt="GitHub profile" />
+        <Icon spriteId="github" alt="GitHub profile" />
       </Link>
     </footer>
   );

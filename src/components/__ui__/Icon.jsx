@@ -1,7 +1,7 @@
 import { BASE_URL } from '@/constants.js';
 
-export function Icon({ fileName, alt }) {
-  const url = `${BASE_URL}src/assets/icons/${fileName}.svg`;
+export function Icon({ spriteId, alt }) {
+  const url = `${BASE_URL}/icons.svg#${spriteId}`;
 
   return (
     <svg

@@ -4,10 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "vite build",
+    "build": "vite build && vite preview",
     "dev": "vite",
-    "lint": "biome check --fix",
-    "preview": "vite preview"
+    "lint": "biome check --fix"
   },
   "dependencies": {
     "react": "^19.2.4",

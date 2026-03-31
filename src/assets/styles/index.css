@@ -39,6 +39,10 @@
   --space-xl: 1.5rem;
   --space-xxl: 2rem;
 
+  /* Transitions */
+  --duration-short: 250ms ease;
+  --duration-medium: 750ms ease;
+
   /* Typography */
   --ff: Ari-W9500;
   --ff-bold: 'Ari-W9500 Bold';

@@ -1,7 +1,7 @@
 a {
   color: currentColor;
   text-decoration-color: transparent;
-  transition: text-decoration-color 250ms ease;
+  transition: text-decoration-color var(--duration-short);
 
   &:hover {
     text-decoration-color: currentColor;
@@ -9,7 +9,7 @@ a {
 }
 
 a:has(.icon) {
-  transition: transform 750ms ease;
+  transition: var(--duration-medium);
 
   &:hover {
     transform: rotate(1turn);

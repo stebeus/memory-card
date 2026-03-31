@@ -6,7 +6,7 @@
     text-transform: capitalize;
     cursor: pointer;
     background-color: var(--color-base);
-    transition: transform 250ms ease;
+    transition: transform var(--duration-short);
 
     &:hover {
       transform: scale(1.125) translateY(-1rem);
@@ -35,7 +35,7 @@
   }
 
   .loader {
-    animation: spin 750ms ease infinite;
+    animation: spin var(--duration-medium) infinite;
   }
 
   @keyframes spin {

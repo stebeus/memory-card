@@ -17,6 +17,18 @@
 }
 
 :root {
+  /* Colors */
+  --color-base: oklch(1 0 0);
+  --color-baseSecondary: oklch(from var(--color-base) calc(l - 0.06) c h);
+  --color-content: oklch(0.15 0 0);
+  --color-contentMuted: oklch(from var(--color-content) calc(l + 0.2) c h);
+  --color-accent: oklch(0.55 0.22 29);
+  --color-accentDarker: oklch(0.22 0.22 29);
+  --color-contentHeader: oklch(1 0 0);
+  --color-contentHeaderMuted: oklch(
+    from var(--color-accent) calc(l + 0.25) calc(c - 0.18) h
+  );
+
   /* Spacing */
   --space-xxs: 0.25rem;
   --space-xs: 0.5rem;

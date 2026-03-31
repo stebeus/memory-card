@@ -11,4 +11,8 @@
     margin: var(--space-sm);
     content: '|';
   }
+
+  a:hover {
+    color: var(--color-content);
+  }
 }

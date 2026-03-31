@@ -1,0 +1,24 @@
+@scope (.scoreboard) {
+  :scope {
+    display: flex;
+    flex-basis: 1rem;
+    flex-wrap: wrap;
+    gap: var(--space-xxs);
+  }
+
+  p {
+    display: flex;
+    flex-basis: 100%;
+    gap: var(--space-xs);
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-xxs) var(--space-xs);
+    color: var(--color-contentHeaderMuted);
+    background-color: var(--color-accentDarker);
+  }
+
+  .score {
+    font: var(--font-heading);
+    color: var(--color-contentHeader);
+  }
+}

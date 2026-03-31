@@ -1,0 +1,44 @@
+@scope (.card) {
+  :scope {
+    padding: var(--space-xs);
+    padding-bottom: var(--space-sm);
+    text-align: center;
+    text-transform: capitalize;
+    cursor: pointer;
+    background-color: var(--color-base);
+  }
+
+  &:has(.error) {
+    h2 {
+      font-size: var(--fs-md);
+    }
+  }
+
+  .img-wrapper {
+    align-content: center;
+    min-height: 8.25rem;
+    margin-bottom: var(--space-xs);
+    background-color: var(--color-baseSecondary);
+  }
+
+  img {
+    justify-self: center;
+  }
+
+  .sprite {
+    width: 100%;
+  }
+
+  .loader {
+    animation: spin 750ms ease infinite;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+}

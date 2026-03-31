@@ -7,3 +7,11 @@ a {
     text-decoration-color: currentColor;
   }
 }
+
+a:has(.icon) {
+  transition: transform 750ms ease;
+
+  &:hover {
+    transform: rotate(1turn);
+  }
+}

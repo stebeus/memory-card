@@ -1,0 +1,20 @@
+@scope (header) {
+  :scope {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-xs) var(--space-sm);
+    font-family: var(--ff-bold);
+    font-weight: var(--fw-bold);
+    color: var(--color-contentHeader);
+    background-color: var(--color-accent);
+  }
+
+  .logo {
+    font: var(--font-logo);
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
